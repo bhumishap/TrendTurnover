@@ -20,8 +20,8 @@ const NavBar = () => {
                 <Link to="/sell" className="navbar-link cen">Sell</Link>
                 <Link to="/shop" className="navbar-link cen">Buy</Link>
                 <Link to="/donate" className="navbar-link cen">Donate</Link>
-                <Link to="/qualitycheck" className="navbar-link">Quality Check</Link> 
-                <Link to="/guide" className="navbar-link cen">Guide</Link>
+                <Link to="/recycle" className="navbar-link cen">Recycle</Link>
+                <Link to="/qualitycheck" className="navbar-link">Quality Check</Link>                 
                 <Link to="/about" className="navbar-link cen">About</Link>
                 {/* <Link to="/#" className="navbar-link cen">Admin Panel</Link> */}
             </div>

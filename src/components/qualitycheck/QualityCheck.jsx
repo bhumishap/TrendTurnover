@@ -42,6 +42,22 @@ const QualityCheck = () => {
             question: "Can I track my item's progress?",
             answer: "Yes, you can enter your customer ID to track the progress of your item's quality check.",
         },
+        {
+            question: "How will I be notified of my item's status?",
+            answer: "You can check on this page after a few days. We're still working on our notify feature that can mail you updates.",
+        },
+        {
+            question: "Is there a fee for the quality check?",
+            answer: "No, the quality check is free of charge for all items submitted.",
+        },
+        {
+            question: "What types of items do you accept for quality checks?",
+            answer: "We accept clothing in acceptable condition and the exceptions are underwear, socks, etc.",
+        },
+        {
+            question: "Can I withdraw my item after submission?",
+            answer: "Once submitted, items cannot be withdrawn from the quality check process.",
+        },
     ];
 
     const toggleFaq = (index) => {
@@ -90,8 +106,7 @@ const QualityCheck = () => {
                                 className={`faq-question ${faqOpen[index] ? 'active' : ''}`}
                                 onClick={() => toggleFaq(index)}
                             >
-                                {faq.question}
-                                <FontAwesomeIcon icon={faQuestionCircle} />
+                                <FontAwesomeIcon icon={faQuestionCircle} /> {faq.question}
                             </div>
                             <div className={`faq-answer ${faqOpen[index] ? 'open' : ''}`}>
                                 {faq.answer}

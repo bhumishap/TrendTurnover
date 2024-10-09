@@ -1,3 +1,4 @@
+/* Customer ID Input Styles */
 .input-container {
     display: flex;
     flex-direction: row;
@@ -18,13 +19,14 @@
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
     width: 500px; /* Keep width consistent */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add soft shadow for depth */
-    color: black;
+    background-color: #fff; /* Keep background white for contrast */
+    color: #333; /* Darker text for better readability */
 }
 
 .customer-id-input:focus {
     border-color: #b59064; /* Replace blue with new color */
     box-shadow: 0 0 6px rgba(181, 144, 100, 0.5); /* New color glow on focus */
-    color: black;
+    background-color: #fff; /* Maintain background color on focus */
 }
 
 .button {
@@ -47,24 +49,4 @@
 .button:active {
     background-color: #8f6640; /* Even darker shade of new color on click */
     transform: translateY(0); /* Return to original position on click */
-}
-
-.input-field {
-    width: 300px; /* Adjust width */
-    padding: 5px; /* Padding of 5px from all sides */
-    font-size: 16px;
-    border: 1px solid #ccc; /* Light border for clean look */
-    border-radius: 5px; /* Rounded corners */
-    outline: none;
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    background-color: white;
-    color: black;
-}
-
-
-.input-field:focus {
-    border-color: #b59064; /* Replace blue with new color */
-    box-shadow: 0 0 8px rgba(181, 144, 100, 0.3); /* New color glow on focus */
-    background-color: white;
 }

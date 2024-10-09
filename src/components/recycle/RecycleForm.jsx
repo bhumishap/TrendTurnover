@@ -1,15 +1,21 @@
-import React from 'react';
-import './SellForm.css'; // Ensure your CSS file is correctly linked
+import React, { useState } from 'react'; // Import useState for managing state
+import './RecycleForm.css'; // Ensure your CSS file is correctly linked
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Import FontAwesome
-import { faUser, faEnvelope, faTag, faDollarSign, faFileImage } from '@fortawesome/free-solid-svg-icons'; // Import icons
+import { faUser, faEnvelope, faTag, faFileImage, faRecycle } from '@fortawesome/free-solid-svg-icons'; // Import icons
 
-function SellForm() {
+function RecycleForm() {
+  const [action, setAction] = useState(''); // State to hold the selected action
+
+  const handleActionChange = (event) => {
+    setAction(event.target.value); // Update action based on the selected radio button
+  };
+
   return (
     <div className="main-block">
       <div className="left-part">
         <i className="fas fa-tags"></i>
-        <h1>Resell Your Product</h1>
-        <p>Enter your details and let us know which product you are reselling.</p>
+        <h1>Recycle Your Product</h1>
+        <p>Enter your details and let us know which product you want to recycle.</p>
       </div>
       <form action="/" className="form-container">
         <div className="title">
@@ -45,28 +51,50 @@ function SellForm() {
 
         <div className="form-group">
           <label htmlFor="product-name" className="form-label">
-            <FontAwesomeIcon icon={faTag} className="form-icon" /> Product Name
+            <FontAwesomeIcon icon={faTag} className="form-icon" /> Product Name 
           </label>
           <input
             type="text"
             id="product-name"
             className="form-control"
-            placeholder="Enter product name"
+            placeholder="Product Name"
             required
           />
         </div>
 
         <div className="form-group">
-          <label htmlFor="price" className="form-label">
-            <FontAwesomeIcon icon={faDollarSign} className="form-icon" /> Price
+          <label className="form-label">
+            <FontAwesomeIcon icon={faRecycle} className="form-icon" /> Would you like to sell or donate after recycling?
           </label>
-          <input
-            type="number"
-            id="price"
-            className="form-control"
-            placeholder="Enter price"
-            required
-          />
+          <div className="radio-group">
+            <label>
+              <input
+                type="radio"
+                value="sell"
+                checked={action === 'sell'}
+                onChange={handleActionChange}
+              />
+              Sell
+            </label>
+            <label>
+              <input
+                type="radio"
+                value="donate"
+                checked={action === 'donate'}
+                onChange={handleActionChange}
+              />
+              Donate
+            </label>
+            <label>
+              <input
+                type="radio"
+                value="decide-later"
+                checked={action === 'decide-later'}
+                onChange={handleActionChange}
+              />
+              Decide Later
+            </label>
+          </div>
         </div>
 
         <div className="form-group">
@@ -95,10 +123,10 @@ function SellForm() {
           />
         </div>
 
-        <button type="submit" className="submit-button">Submit Listing</button>
+        <button type="submit" className="submit-button">Submit Recycling Request</button>
       </form>
     </div>
   );
 }
 
-export default SellForm; // Move export default here
+export default RecycleForm; // Move export default here 
