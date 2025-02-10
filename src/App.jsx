@@ -10,7 +10,6 @@ import Promo from './components/promo/Promo';     // Only on Home
 function App() {
     return (
         <Router>
-        <Router>
             <NavBar />
             <Routes>
                 {/* Home Page Route */}
