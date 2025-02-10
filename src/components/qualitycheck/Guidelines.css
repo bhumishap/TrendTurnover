@@ -1,4 +1,3 @@
-/* Guidelines Container Styles */
 .guidelines-container {
     background-color: #faf7f2; /* Softer off-white for less harsh contrast */
     border-radius: 10px; /* Slightly more rounded for a smoother look */
@@ -69,7 +68,10 @@
 }
 
 /* Improved List Style */
-.guidelines-container ol li::marker,
+.guidelines-container ol li::marker {
+    color: #d2a35d; /* Brownish-yellow for list numbers */
+}
+
 .guidelines-container ul li::marker {
-    color: #d2a35d; /* Brownish-yellow for list markers */
+    color: #d2a35d; /* Brownish-yellow for bullet points */
 }

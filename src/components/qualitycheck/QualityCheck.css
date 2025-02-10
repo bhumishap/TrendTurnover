@@ -1,82 +1,78 @@
-/* Quality Check Content */
 .quality-check-content {
     text-align: center;
-    width: 100%;
+    width: 100%; /* Utilize full screen width */
     background-color: #faf7f2;
-    padding: 4rem 2rem; /* Slightly increased padding for a more spacious look */
+    padding: 3rem 2rem;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    margin: 0 auto;
+    margin: 0 auto; 
 }
 
-/* Heading */
 h1 {
     font-family: 'Poppins', sans-serif;
     color: #8b5e34;
     letter-spacing: 1px;
-    margin: 2.5rem 0; /* Balanced margin for visual appeal */
+    margin-bottom: 2rem;
+    margin-top: 2.5rem; /* Added space at the top for better visibility */
     border-bottom: 2px solid #d2a35d;
     padding-bottom: 0.5rem;
 }
 
-/* Input Status Container */
 .input-status-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    margin-bottom: 3rem; /* Increased margin for more space */
-    width: 90%;
-    max-width: 1200px;
+    margin-bottom: 2rem;
+    width: 90%; 
+    padding: 0 2rem; 
+    max-width: 1200px; 
     margin: 0 auto;
 }
 
-/* Customer ID Input */
+/* Styling for Input Field */
 .customer-id-input {
     border: 1px solid #e0c4a8;
     padding: 1rem;
     border-radius: 5px;
-    width: 70%; /* Adjusted for better visibility */
+    width: 60%; /* Adjust width */
     transition: border-color 0.3s ease;
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .customer-id-input:focus {
-    border-color: #d2a35d; /* Highlight the border on focus */
+    border-color: none;
     outline: none;
 }
 
-/* Check Status Button */
 .check-status-button {
-    background-color: #c1914a;
+    background-color: #e7c18a;
     color: #fff;
-    padding: 0.8rem 2.5rem; /* Increased padding for better clickability */
+    padding: 0.7rem 2rem;
     border-radius: 25px;
     cursor: pointer;
     font-size: 1rem;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    margin-left: 1rem;
+    margin-left: 1rem; /* Space between input and button */
 }
 
 .check-status-button:hover {
-    background-color: #d2a35d; /* Slightly different shade for hover */
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    background-color: #c1914a;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Step Progress */
 .step-progress {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top: 30px;
-    margin-top: 70px;
-    gap: 1rem;
+    margin-top: 3rem;
+    gap: 1rem; /* Add some space between steps */
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .step {
     width: 20%;
-    padding: 0.7rem; /* Increased padding for a more prominent look */
+    padding: 0.5rem;
     border-radius: 25px;
     background-color: #ffffff;
     color: #8b5e34;
@@ -89,10 +85,9 @@ h1 {
     background-color: #d2a35d;
     color: white;
     font-weight: bold;
-    transform: scale(1.05);
+    transform: scale(1.05); 
 }
 
-/* Time Estimate */
 .time-estimate {
     margin-top: 1rem;
     font-size: 1.1rem;
@@ -104,29 +99,28 @@ h1 {
 
 /* Guidelines Section */
 .guidelines {
-    margin-top: 6rem;
+    margin-top: 5rem;
     text-align: left;
-    padding: 2rem; /* Added more padding */
+    padding: 1.5rem;
     border-radius: 5px;
     background-color: #fdf3e3;
     border: 1px solid #dcdcdc;
-    color: black;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
     max-width: 1200px;
-    margin: 3rem auto; /* Increased margin for better spacing */
+    margin: 0 auto;
 }
 
 /* FAQ Section */
 .faqs {
     margin-top: 3rem;
     text-align: left;
-    padding: 0 2rem;
-    max-width: 1200px;
+    padding: 0 2rem; /* Add padding to prevent answers from touching the edges */
+    max-width: 1200px; /* Prevent FAQ from becoming too wide */
     margin: 0 auto;
 }
 
 .faqs h2 {
-    font-size: 1.6rem; /* Slightly increased font size */
+    font-size: 1.5rem;
     color: #8b5e34;
     margin-bottom: 1rem;
     display: flex;
@@ -140,7 +134,7 @@ h1 {
 }
 
 .faq-question {
-    padding: 0.8rem; /* Slightly increased padding */
+    padding: 0.7rem;
     background-color: #f5f5f5;
     border: 1px solid #d2a35d;
     border-radius: 5px;
@@ -158,9 +152,10 @@ h1 {
     margin-top: 0.5rem;
     padding: 0.5rem;
     border-left: 3px solid #d2a35d;
-    font-size: 1rem; /* Increased font size for better readability */
+    background-color: #fff8e7;
+    font-size: 0.95rem;
     transition: opacity 0.5s ease, max-height 0.3s ease;
-    max-width: 1000px;
+    max-width: 1000px; /* Restrict width for better readability */
 }
 
 .faq-question.active + .faq-answer {
@@ -171,7 +166,7 @@ h1 {
 /* Feedback Section */
 .feedback-section {
     margin-top: 2rem;
-    text-align: center;
+    text-align: center; /* Center the feedback section */
 }
 
 .feedback-section p {
@@ -180,7 +175,195 @@ h1 {
     font-style: italic;
 }
 
-/* Body Styles */
+/* Additional Layout Adjustments */
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+}
+
+html, body {
+    overflow-x: hidden;
+}.quality-check-content {
+    text-align: center;
+    width: 100%; /* Utilize full screen width */
+    background-color: #faf7f2;
+    padding: 3rem 2rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 0 auto; 
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    color: #8b5e34;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+    margin-top: 2.5rem; /* Added space at the top for better visibility */
+    border-bottom: 2px solid #d2a35d;
+    padding-bottom: 0.5rem;
+}
+
+.input-status-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    width: 90%; 
+    padding: 0 2rem; 
+    max-width: 1200px; 
+    margin: 0 auto;
+}
+
+/* Styling for Input Field */
+.customer-id-input {
+    border: 1px solid #e0c4a8;
+    padding: 1rem;
+    border-radius: 5px;
+    width: 60%; /* Adjust width */
+    transition: border-color 0.3s ease;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.customer-id-input:focus {
+    border-color: none;
+    outline: none;
+}
+
+.check-status-button {
+    background-color: #e7c18a;
+    color: #fff;
+    padding: 0.7rem 2rem;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin-left: 1rem; /* Space between input and button */
+}
+
+.check-status-button:hover {
+    background-color: #c1914a;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.step-progress {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3rem;
+    gap: 1rem; /* Add some space between steps */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.step {
+    width: 20%;
+    padding: 0.5rem;
+    border-radius: 25px;
+    background-color: #ffffff;
+    color: #8b5e34;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border: 1px solid #d2a35d;
+}
+
+.step.active {
+    background-color: #d2a35d;
+    color: white;
+    font-weight: bold;
+    transform: scale(1.05); 
+}
+
+.time-estimate {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    color: #8b5e34;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Guidelines Section */
+.guidelines {
+    margin-top: 6rem; /* Adjusted for more space */
+    text-align: left;
+    padding: 1.5rem;
+    border-radius: 5px;
+    background-color: #fdf3e3;
+    border: 1px solid #dcdcdc;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    max-width: 1200px;
+    margin: 2rem auto; /* Ensures equal spacing on top and bottom */
+}
+
+/* FAQ Section */
+.faqs {
+    margin-top: 3rem;
+    text-align: left;
+    padding: 0 2rem; /* Add padding to prevent answers from touching the edges */
+    max-width: 1200px; /* Prevent FAQ from becoming too wide */
+    margin: 0 auto;
+}
+
+.faqs h2 {
+    font-size: 1.5rem;
+    color: #8b5e34;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.faqs ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.faq-question {
+    padding: 0.7rem;
+    background-color: #f5f5f5;
+    border: 1px solid #d2a35d;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+    background-color: #e0c4a8;
+}
+
+.faq-answer {
+    display: none;
+    opacity: 0;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    border-left: 3px solid #d2a35d;
+    background-color: #fff8e7;
+    font-size: 0.95rem;
+    transition: opacity 0.5s ease, max-height 0.3s ease;
+    max-width: 1000px; /* Restrict width for better readability */
+}
+
+.faq-question.active + .faq-answer {
+    display: block;
+    opacity: 1;
+}
+
+/* Feedback Section */
+.feedback-section {
+    margin-top: 2rem;
+    text-align: center; /* Center the feedback section */
+}
+
+.feedback-section p {
+    font-size: 1rem;
+    color: #8b5e34;
+    font-style: italic;
+}
+
+/* Additional Layout Adjustments */
 body {
     margin: 0;
     padding: 0;
@@ -192,4 +375,3 @@ body {
 html, body {
     overflow-x: hidden;
 }
-        

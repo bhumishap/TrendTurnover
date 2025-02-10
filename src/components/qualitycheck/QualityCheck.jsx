@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faClock, faCheckCircle, faQuestionCircle } from '@fortawesome/free-solid-svg-icons';
 import CustomerIDInput from './CustomerIDInput';
 import StatusDisplay from './StatusDisplay';
 import Guidelines from './Guidelines';
+import { FaCheckCircle, FaClock, FaQuestionCircle } from 'react-icons/fa';
 import './QualityCheck.css';
 
 const QualityCheck = () => {
@@ -36,27 +35,11 @@ const QualityCheck = () => {
         },
         {
             question: "What happens if my item doesn't pass?",
-            answer: "If your item doesn't pass the quality check, we'll notify you; it can be either recycled or donated.",
+            answer: "If your item doesn't pass the quality check, we'll notify you, it can be either recycled or donated.",
         },
         {
             question: "Can I track my item's progress?",
             answer: "Yes, you can enter your customer ID to track the progress of your item's quality check.",
-        },
-        {
-            question: "How will I be notified of my item's status?",
-            answer: "You can check on this page after a few days. We're still working on our notify feature that can mail you updates.",
-        },
-        {
-            question: "Is there a fee for the quality check?",
-            answer: "No, the quality check is free of charge for all items submitted.",
-        },
-        {
-            question: "What types of items do you accept for quality checks?",
-            answer: "We accept clothing in acceptable condition and the exceptions are underwear, socks, etc.",
-        },
-        {
-            question: "Can I withdraw my item after submission?",
-            answer: "Once submitted, items cannot be withdrawn from the quality check process.",
         },
     ];
 
@@ -84,12 +67,12 @@ const QualityCheck = () => {
                 <div className={`step ${progress >= 25 ? 'active' : ''}`}>Item Received</div>
                 <div className={`step ${progress >= 50 ? 'active' : ''}`}>In Review</div>
                 <div className={`step ${progress >= 75 ? 'active' : ''}`}>Quality Check Passed</div>
-                <div className={`step ${progress === 100 ? 'active' : ''}`}>Completed</div>
+                <div className={`step ${progress === 100 ? 'active' : ''}`}>Completed.</div>
             </div>
 
             {showTime && (
                 <p className="time-estimate">
-                    <FontAwesomeIcon icon={faClock} /> {timeEstimates[progress]}
+                    <FaClock /> {timeEstimates[progress]}
                 </p>
             )}
 
@@ -106,7 +89,7 @@ const QualityCheck = () => {
                                 className={`faq-question ${faqOpen[index] ? 'active' : ''}`}
                                 onClick={() => toggleFaq(index)}
                             >
-                                <FontAwesomeIcon icon={faQuestionCircle} /> {faq.question}
+                                {faq.question}
                             </div>
                             <div className={`faq-answer ${faqOpen[index] ? 'open' : ''}`}>
                                 {faq.answer}
@@ -114,7 +97,7 @@ const QualityCheck = () => {
                         </li>
                     ))}
                 </ul>
-            </div> 
+            </div> {/* Closing div for faqs */}
         </div>
     );
 };

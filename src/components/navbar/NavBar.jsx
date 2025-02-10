@@ -1,8 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser } from '@fortawesome/free-solid-svg-icons'; 
-import { faCartShopping } from '@fortawesome/free-solid-svg-icons'; 
 import './NavBar.css';
 import logo from '../../assets/logo.png';
 
@@ -15,24 +12,12 @@ const NavBar = () => {
             </div>
 
             <div className="navbar-links">
-                <Link to="/" className="navbar-link cen">Home</Link>
-                {/* <Link to="/shop" className="navbar-link cen"></Link> */}
-                <Link to="/sell" className="navbar-link cen">Sell</Link>
-                <Link to="/shop" className="navbar-link cen">Buy</Link>
-                <Link to="/donate" className="navbar-link cen">Donate</Link>
-                <Link to="/recycle" className="navbar-link cen">Recycle</Link>
-                <Link to="/qualitycheck" className="navbar-link">Quality Check</Link>                 
-                <Link to="/about" className="navbar-link cen">About</Link>
-                {/* <Link to="/#" className="navbar-link cen">Admin Panel</Link> */}
-            </div>
-
-            <div>
-                <Link to="/account" className="navbar-link pro-icon pro-link">
-                    <FontAwesomeIcon icon={faUser} />
-                </Link>
-                <Link to="/" className="navbar-link pro-icon pro-link">
-                    <FontAwesomeIcon icon={faCartShopping} className='cart-icon'/>
-                </Link>
+                <Link to="/" className="navbar-link">Home</Link>
+                <Link to="/shop" className="navbar-link">Shop</Link>
+                <Link to="/sell" className="navbar-link">Sell</Link>
+                <Link to="/guide" className="navbar-link">Guide</Link>
+                <Link to="/quality-check" className="navbar-link">Quality Check</Link> {/* Added link */}
+                <Link to="/contact" className="navbar-link">Contact</Link>
             </div>
         </nav>
     );

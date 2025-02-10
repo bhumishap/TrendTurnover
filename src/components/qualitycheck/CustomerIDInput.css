@@ -1,32 +1,15 @@
-/* Customer ID Input Styles */
 .input-container {
     display: flex;
     flex-direction: row;
     gap: 1rem;
     margin-bottom: 2rem;
-    justify-content: center; /* Center the content horizontally */
-    align-items: center; /* Align vertically */
 }
 
 .customer-id-input {
-    display: flex;
-    justify-content: center;
     padding: 1rem;
     font-size: 1rem;
     border: 1px solid #ccc;
     border-radius: 5px;
-    outline: none;
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
-    width: 500px; /* Keep width consistent */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add soft shadow for depth */
-    background-color: #fff; /* Keep background white for contrast */
-    color: #333; /* Darker text for better readability */
-}
-
-.customer-id-input:focus {
-    border-color: #b59064; /* Replace blue with new color */
-    box-shadow: 0 0 6px rgba(181, 144, 100, 0.5); /* New color glow on focus */
-    background-color: #fff; /* Maintain background color on focus */
 }
 
 .button {
@@ -35,18 +18,11 @@
     cursor: pointer;
     border: none;
     border-radius: 5px;
-    background-color: #b59064; /* New color */
+    background-color: #007bff;
     color: #fff;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add button shadow for depth */
+    transition: background-color 0.3s ease;
 }
 
 .button:hover {
-    background-color: #a3784c; /* Darker shade of new color on hover */
-    transform: translateY(-2px); /* Slight lift effect on hover */
-}
-
-.button:active {
-    background-color: #8f6640; /* Even darker shade of new color on click */
-    transform: translateY(0); /* Return to original position on click */
+    background-color: #0056b3;
 }

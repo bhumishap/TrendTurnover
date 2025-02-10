@@ -9,7 +9,7 @@
     background-color: white;
     color: black;
     z-index: 1000;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-logo {
@@ -34,16 +34,12 @@
 
 .navbar-link:hover {
     text-decoration: underline;
-    color: #000000; 
-}
-
-.body-content {
-    margin-top: 4rem;
+    color: #000000;
 }
 
 .navbar-logo-image {
     width: 140px;
-    height: 42px; 
+    height: 42px;
     object-fit: contain;
 }
 
@@ -60,14 +56,4 @@
 
 .navbar-button:hover {
     background-color: #b59064;
-    text-decoration: underline;
-}
-
-.pro-icon {
-    margin-right: 10px;
-    margin-left: auto; /* Push the user icon to the left */
-}
-
-.cart-icon {
-    margin-right : 30px;
 }

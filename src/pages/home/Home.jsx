@@ -1,17 +1,11 @@
-// Home.jsx
 import React from 'react';
-import { Link } from 'react-router-dom';
-import './Home.css'; 
-import Promo from '../../components/promo/Promo';
-import Banner from '../../components/banner/Banner';
+import './Home.css';
 
-const Home = () => {
-  return (
-    <div>
-        <Banner/>
-        <Promo/>
-    </div>
-  );
-};
 
-export default Home;
+export default function Home() {
+    return (
+        <div className="container">
+            {/* Intentionally left empty */}
+        </div>
+    );
+}
